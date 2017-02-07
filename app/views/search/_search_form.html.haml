@@ -1,0 +1,9 @@
+.col-md-6.col-md-offset-3
+  %h2 Search photos
+  = form_tag root_path, method: :get do
+    #custom-search-input
+      .input-group.col-md-12
+        = text_field_tag 'query', params[:query], placeholder: 'Enter your search query here', class: 'form-control input-lg'
+        %span.input-group-btn
+          = button_tag(type: 'submit', class: 'btn btn-info btn-lg') do
+            %i.glyphicon.glyphicon-search

@@ -1,0 +1,6 @@
+.container
+  = render 'search_form'
+- if @results.photos
+  - @results.photos.each do |photo|
+    = render 'preview', photo: photo
+

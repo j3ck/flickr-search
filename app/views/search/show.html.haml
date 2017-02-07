@@ -1,0 +1,18 @@
+= image_tag @photo.url(:large)
+
+%h2
+  = @photo.title
+
+%table.table.table-striped
+  - if @photo.camera
+    %tr
+      %td Camera
+      %td
+      = @photo.camera
+  - if @photo.exif
+    - @photo.exif.each do |row|
+      %tr
+        %td
+          = row[:label]
+        %td
+          = row[:content]
