@@ -15,6 +15,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'haml'
+gem 'flickr_fu', github: 'j3ck/flickr_fu'
 
 group :development, :test do
   gem 'pry-rails'
