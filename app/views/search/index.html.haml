@@ -1,6 +1,8 @@
 .container
   = render 'search_form'
 - if @results.photos
+  = render 'pagination', results: @results
   - @results.photos.each do |photo|
     = render 'preview', photo: photo
 
+  = render 'pagination', results: @results

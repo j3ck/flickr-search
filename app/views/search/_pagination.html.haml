@@ -1,0 +1,7 @@
+.col-md-12
+  %nav
+    %ul.pager
+      %li
+        = link_to 'Previous', request.query_parameters.merge(page: results.page - 1)
+      %li
+        = link_to 'Next', request.query_parameters.merge(page: results.page + 1)
