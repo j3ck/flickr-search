@@ -18,6 +18,8 @@ gem 'haml'
 gem 'flickr_fu', github: 'j3ck/flickr_fu'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
   gem 'pry-rails'
   gem 'rubocop'
 end
