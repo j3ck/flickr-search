@@ -5,7 +5,8 @@ Heroku - https://murmuring-island-93950.herokuapp.com/
 
 Flickr API - https://github.com/j3ck/flickr_fu - fork with exif processing
 
-
+```bash
 cp config/flickr.yml.example config/flickr.yml
 rails s
 rspec spec
+```
